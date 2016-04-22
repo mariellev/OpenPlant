@@ -5,6 +5,7 @@
 # count for each codon
 # highlight preferred codon for each amino acid
 # calculate relative adaptiveness wj for each codon of kind j
+# requires genetic_code.txt
 
 use strict;
 use warnings;
@@ -131,4 +132,5 @@ sub retrieve_most_frequent {
 sub help {
     print "USAGE:\n";
     print "./calculate_codon_usage [fasta_filename] [output_filename]\n";
+    print "genetic_code.txt file needs to be placed in the current directory\n";
 }
